@@ -1,18 +1,18 @@
 #include <stdio.h>
 
-int main()
-{
-    float radius, area, circumference;
-    float pi = 3.14;
+int main() {
+    float length, breadth, area, perimeter;
 
-    printf("Enter the radius: ");
-    scanf("%f", &radius);
+    // Input length and breadth
+    printf("Enter length and breadth: ");
+    scanf("%f %f", &length, &breadth);
 
-    area = pi * radius * radius;
-    circumference = 2 * pi * radius;
+    // Calculate area and perimeter
+    area = length * breadth;
+    perimeter = 2 * (length + breadth);
 
-    printf("Area = %.2f\n", area);
-    printf("Circumference = %.2f\n", circumference);
+    // Display the output matching the test case format
+    printf("Area=%.0f, Perimeter=%.0f\n", area, perimeter);
 
     return 0;
 }
